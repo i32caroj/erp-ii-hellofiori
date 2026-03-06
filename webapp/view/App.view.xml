@@ -1,0 +1,13 @@
+<mvc:View controllerName="be.hogent.hellofiori.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <App id='app'>
+        <Page id="page" title="{i18n>title}">
+            <Label id="test" text="Test, write something" class="sapUiSmallMarginTop sapUiTinyMarginBottom" />
+            <Input id="feedinput"
+            value="{path:'/name', model: 'custom'}">
+            </Input>
+            <Button id="btnHello" text="Hello {path:'/user', model:'custom'}" press="onPress"></Button>
+        </Page>
+    </App>
+</mvc:View>
