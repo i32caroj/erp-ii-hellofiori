@@ -16,7 +16,7 @@ sap.ui.define([
         },
         onPress: function (evt) {
 			let data = this.getView().getModel("custom").getData();
-            MessageToast.show(data.name + "was entered or something")
+            MessageToast.show(data.name + " was entered or something")
 		},
     });
 });
